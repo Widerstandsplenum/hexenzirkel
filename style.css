@@ -1,0 +1,201 @@
+/* Custom CSS for Transformative Gerechtigkeit Website */
+
+:root {
+  --primary-purple: #A47FC7;
+  --dark-purple: #6B4B7A;
+  --text-black: #000000;
+  --light-bg: #F9F7FA;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: var(--text-black);
+}
+
+/* Landing Page Hero */
+.landing-hero {
+  background-color: var(--primary-purple);
+  color: white;
+  padding: 80px 20px;
+  text-align: center;
+  min-height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.landing-hero h1 {
+  color: var(--dark-purple);
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.landing-hero p {
+  font-size: 1.2rem;
+  color: white;
+  max-width: 600px;
+  margin: auto;
+}
+
+/* Navigation */
+nav.navbar {
+  background-color: var(--primary-purple) !important;
+}
+
+nav.navbar .nav-link {
+  color: white !important;
+  font-weight: 500;
+  margin: 0 10px;
+}
+
+nav.navbar .nav-link:hover {
+  color: var(--dark-purple) !important;
+}
+
+/* Page Headers */
+h2 {
+  color: var(--dark-purple);
+  margin-top: 40px;
+  margin-bottom: 25px;
+  font-weight: 700;
+  font-size: 2.2rem;
+}
+
+h3 {
+  color: var(--text-black);
+  margin-top: 30px;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+/* Content Sections */
+.content-section {
+  padding: 60px 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.content-section p {
+  margin-bottom: 15px;
+  font-size: 1.05rem;
+  line-height: 1.8;
+}
+
+/* Cards (for blog posts, resources) */
+.card {
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 25px;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(164, 127, 199, 0.3);
+}
+
+.card-header {
+  background-color: var(--primary-purple);
+  color: white;
+  border-radius: 8px 8px 0 0 !important;
+}
+
+.card-title {
+  color: var(--dark-purple);
+  font-weight: 600;
+}
+
+.card-text {
+  color: var(--text-black);
+}
+
+/* Buttons */
+.btn-primary {
+  background-color: var(--primary-purple);
+  border-color: var(--primary-purple);
+}
+
+.btn-primary:hover {
+  background-color: var(--dark-purple);
+  border-color: var(--dark-purple);
+}
+
+/* Links */
+a {
+  color: var(--primary-purple);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--dark-purple);
+  text-decoration: underline;
+}
+
+/* Resources List */
+.resources-list {
+  background-color: var(--light-bg);
+  padding: 30px;
+  border-radius: 8px;
+  margin: 30px 0;
+}
+
+.resources-list h4 {
+  color: var(--dark-purple);
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.resources-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.resources-list li {
+  margin-bottom: 10px;
+  padding-left: 25px;
+  position: relative;
+}
+
+.resources-list li:before {
+  content: "→";
+  position: absolute;
+  left: 0;
+  color: var(--primary-purple);
+  font-weight: bold;
+}
+
+/* Footer */
+footer {
+  background-color: var(--dark-purple);
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+  margin-top: 60px;
+}
+
+footer p {
+  margin: 10px 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .landing-hero h1 {
+    font-size: 2rem;
+  }
+
+  .landing-hero p {
+    font-size: 1rem;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  .content-section {
+    padding: 40px 15px;
+  }
+}
